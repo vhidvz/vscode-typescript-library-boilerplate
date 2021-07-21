@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "target": "es5" ,
-    "declaration": true ,
-    "module": "commonjs" ,
+    "target": "es5",
+    "declaration": true,
+    "module": "commonjs",
     "esModuleInterop": true,
     "removeComments": true,
-    "outDir": "./lib" ,
-    "strict": true 
+    "outDir": "./lib",
+    "strict": true
   },
   "include": ["src/**/*"]
 }

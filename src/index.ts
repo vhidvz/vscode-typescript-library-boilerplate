@@ -4,5 +4,3 @@
 export function HelloWorld(): string {
   return 'Hello World...!';
 }
-
-console.log(HelloWorld());

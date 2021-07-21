@@ -6,12 +6,12 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest",
+    "debug": "jest --watch",
     "build": "tsc -p ./tsconfig.json",
     "doc": "typedoc --out docs src/index.ts",
     "clean": "rm -rf ./lib && rm -rf ./coverage",
     "lint": "eslint . '*/**/*.{js,ts}' --quiet --fix",
-    "format": "prettier --write \"(src|test)/**/*.(ts|js)\"",
-    "debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register src/index.ts"
+    "format": "prettier --write \"(src|test)/**/*.(ts|js)\""
   },
   "repository": {
     "type": "git",
@@ -40,7 +40,6 @@
     "prettier": "^2.3.2",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.1.0",
-    "tsconfig-paths": "^3.10.1",
     "typedoc": "^0.21.4",
     "typescript": "^4.3.5"
   },

@@ -6,4 +6,4 @@ This boilerplate is suitable for nodejs library in the Test-Driven Development m
 
 ### Other features
 
-- The fresh `.npmignore` file was added.
+- Fresh `.npmignore` file was added.
