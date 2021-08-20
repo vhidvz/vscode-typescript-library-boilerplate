@@ -1,4 +1,4 @@
-name: Publish to NPM Package Registry
+name: Build, Test and Publish to NPM Package Registry
 on:
   release:
     types: [created]
