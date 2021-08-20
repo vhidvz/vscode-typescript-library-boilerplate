@@ -1,9 +1,6 @@
 # Boilerplate
 
-VS-Code TypeScript library boilerplated with prettier, eslint, jest and the TypeDoc.
+![GitHub](https://img.shields.io/github/license/vhidvz/vscode-typescript-library-boilerplate?style=flat-square)
 
-This boilerplate is suitable for nodejs library in the Test-Driven Development model with coverage support.
 
-### Other features
-
-- Fresh `.npmignore` file was added.
+VS-Code TypeScript library boilerplate with prettier, eslint, jest and the TypeDoc.

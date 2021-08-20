@@ -1,12 +1,13 @@
 {
   "name": "vscode-typescript-library-boilerplate",
   "version": "1.0.0",
-  "description": "VS-Code TypeScript library boilerplated with prettier, eslint, jest and the TypeDoc.",
+  "description": "VS-Code TypeScript library boilerplate with prettier, eslint, jest and the TypeDoc.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest",
     "debug": "jest --watch",
+    "deploy": "npm publish",
     "build": "tsc -p ./tsconfig.json",
     "doc": "typedoc --out docs src/index.ts",
     "clean": "rm -rf ./lib && rm -rf ./coverage",
@@ -42,6 +43,10 @@
     "ts-node": "^10.1.0",
     "typedoc": "^0.21.4",
     "typescript": "^4.3.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "/lib"
