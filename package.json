@@ -7,7 +7,6 @@
   "scripts": {
     "test": "jest",
     "debug": "jest --watch",
-    "deploy": "npm publish",
     "build": "tsc -p ./tsconfig.json",
     "doc": "typedoc --out docs src/index.ts",
     "clean": "rm -rf ./lib && rm -rf ./coverage",
