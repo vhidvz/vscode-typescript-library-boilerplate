@@ -6,9 +6,9 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "debug": "jest --watch",
+    "doc": "typedoc --out docs src/",
     "build": "tsc -p ./tsconfig.json",
     "test": "jest && make-coverage-badge",
-    "doc": "typedoc --out docs src/index.ts",
     "clean": "rm -rf ./lib && rm -rf ./coverage",
     "lint": "eslint . '*/**/*.{js,ts}' --quiet --fix",
     "format": "prettier --write \"(src|test)/**/*.(ts|js)\""
