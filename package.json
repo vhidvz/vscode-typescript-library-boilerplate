@@ -1,6 +1,6 @@
 {
   "name": "vscode-typescript-library-boilerplate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "VS-Code TypeScript library boilerplate with prettier, eslint, jest and the TypeDoc.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
