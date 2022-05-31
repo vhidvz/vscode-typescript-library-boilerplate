@@ -8,10 +8,10 @@
     "debug": "jest --watch",
     "doc": "typedoc --out docs src/",
     "build": "tsc -p ./tsconfig.json",
-    "test": "jest && make-coverage-badge",
     "clean": "rm -rf ./lib && rm -rf ./coverage",
     "lint": "eslint . '*/**/*.{js,ts}' --quiet --fix",
-    "format": "prettier --write \"(src|test)/**/*.(ts|js)\""
+    "format": "prettier --write \"(src|test)/**/*.(ts|js)\"",
+    "test": "jest && make-coverage-badge --report-path docs/coverage/coverage-summary.json --output-path coverage-badge.svg"
   },
   "repository": {
     "type": "git",
