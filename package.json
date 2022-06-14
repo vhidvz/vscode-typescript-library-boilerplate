@@ -6,11 +6,13 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "debug": "jest --watch",
+    "prebuild": "rimraf lib",
     "doc": "typedoc --out docs src/",
     "build": "tsc -p ./tsconfig.json",
     "clean": "rm -rf ./lib && rm -rf ./coverage",
     "lint": "eslint . '*/**/*.{js,ts}' --quiet --fix",
     "format": "prettier --write \"(src|test)/**/*.(ts|js)\"",
+    "start:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register src/index.ts",
     "test": "jest && make-coverage-badge --report-path docs/coverage/coverage-summary.json --output-path coverage-badge.svg"
   },
   "repository": {
@@ -34,15 +36,17 @@
     "@types/jest": "^28.1.1",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
+    "dotenv": "^16.0.1",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "dotenv": "^16.0.1",
     "jest": "^28.1.1",
     "make-coverage-badge": "^1.2.0",
     "prettier": "^2.7.0",
+    "rimraf": "^3.0.2",
     "ts-jest": "^28.0.5",
     "ts-node": "^10.8.1",
+    "tsconfig-paths": "^4.0.0",
     "typedoc": "^0.22.17",
     "typescript": "^4.7.3"
   },
