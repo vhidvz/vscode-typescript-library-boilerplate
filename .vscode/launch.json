@@ -17,7 +17,30 @@
       "request": "launch",
       "name": "Jest watch current file",
       "program": "${workspaceFolder}/node_modules/jest-cli/bin/jest",
-      "args": ["${fileBasename}", "--verbose", "-i", "--no-cache", "--watchAll"],
+      "args": [
+        "${fileBasename}",
+        "--verbose",
+        "-i",
+        "--no-cache",
+        "--watchAll"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest e2e watch current file",
+      "program": "${workspaceFolder}/node_modules/jest-cli/bin/jest",
+      "args": [
+        "${fileBasename}",
+        "--verbose",
+        "-i",
+        "--no-cache",
+        "--watchAll",
+        "--config",
+        "${workspaceFolder}/test/jest-e2e.json"
+      ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
     }
