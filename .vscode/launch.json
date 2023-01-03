@@ -16,7 +16,7 @@
       "type": "node",
       "request": "launch",
       "name": "Jest watch current file",
-      "program": "${workspaceFolder}/node_modules/jest-cli/bin/jest",
+      "program": "${workspaceFolder}/node_modules/jest/bin/jest",
       "args": [
         "${fileBasename}",
         "--verbose",
@@ -31,7 +31,7 @@
       "type": "node",
       "request": "launch",
       "name": "Jest e2e watch current file",
-      "program": "${workspaceFolder}/node_modules/jest-cli/bin/jest",
+      "program": "${workspaceFolder}/node_modules/jest/bin/jest",
       "args": [
         "${fileBasename}",
         "--verbose",
