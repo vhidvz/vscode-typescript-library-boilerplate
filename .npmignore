@@ -1,9 +1,0 @@
-src
-docs
-.vscode
-coverage
-
-tslint.json
-tsconfig.json
-jest.config.ts
-.prettierrc.js

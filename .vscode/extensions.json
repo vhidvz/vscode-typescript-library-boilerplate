@@ -5,7 +5,6 @@
     "kisstkondoros.vscode-codemetrics",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "rvest.vs-code-prettier-eslint",
     "mikestead.dotenv"
   ]
 }
