@@ -6,7 +6,7 @@ export default {
   preset: 'ts-jest',
   roots: ['<rootDir>/test'],
   testEnvironment: 'node',
-  setupFilesAfterEnv: ['./jest.setup.js'],
+  setupFilesAfterEnv: ['./jest.setup.ts'],
   coverageReporters: ['json-summary', 'text', 'lcov'],
   watchman: true,
 };
