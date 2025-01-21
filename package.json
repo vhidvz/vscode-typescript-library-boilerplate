@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
     "prebuild": "rimraf dist",
-    "preinstall": "npx husky",
+    "preinstall": "husky",
     "start": "node -r tsconfig-paths/register -r ts-node/register src/index.ts",
     "start:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register src/index.ts",
     "test": "jest",
